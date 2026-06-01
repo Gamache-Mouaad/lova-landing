@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  /* Colors from image */
+  --color-brand-purple: #8B7BFF;
+  --color-brand-use: #DFC8FE;
+  --color-brand-yellow: #FFD54F;
+  --color-pill-bg: #ffffff;
+  --color-text-dark: #2D2D2D;
+  --color-text-muted: #6B6B78;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  font-family: 'Cairo', 'Tajawal', sans-serif;
+  background-color: #ffffff;
+
+}
+
+/* Reset any debug styles if necessary, but don't break positioning */
+header {
+  display: block;
+}
