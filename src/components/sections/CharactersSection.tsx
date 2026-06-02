@@ -21,7 +21,7 @@ export const CharactersSection = () => {
           <p className="text-2xl text-[#6B6B78] max-w-3xl mx-auto font-medium  leading-relaxed">
             تعرف على أصدقاء لوفا. كل شخصية لها موهبتها وشغفها الخاص.
             <br />
-            سيكونون رفقاء طفلك في رحلة القراءة واللعب.
+            سيكونون رفقاء أطفالكم في رحلة القراءة واللعب.
           </p>
         </div>
 

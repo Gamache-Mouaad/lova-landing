@@ -89,7 +89,7 @@ const HeroSection = () => {
               />
               {' '}للقصص التفاعلية والألعاب التعليمية
               <br />
-              <span className="font-lalezar text-[#8B7BFF]">.تعلم ، العب، اكتشف</span>
+              <span className="font-lalezar text-[#8B7BFF]">تعلم ، العب، اكتشف</span>
             </h1>
 
             {/* Subtext – unchanged */}
@@ -98,7 +98,7 @@ const HeroSection = () => {
                 منصة أطفال عربية آمنة تجمع القصص المسموعة
               </p>
               <p className="mx-auto max-w-4xl text-xl md:text-[28px] text-[#6B6B78] leading-tight">
-                لألعاب التعليمية،والمغامرات الصوتية.
+                لألعاب التعليمية،والمغامرات الصوتية
               </p>
               <p className="text-lg md:text-xl text-[#8B7BFF] mt-2">
                 لأعمار 4-13سنة، لوفا صديق صغارك في القصص والألعاب

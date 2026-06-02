@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Gamepad2 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom'; // <-- import useNavigate
 import logoImg from '../../assets/games/logo.png';
 import gameImg1 from '../../assets/games/1.png';
 import gameImg2 from '../../assets/games/2.png';
@@ -18,7 +19,7 @@ const games: Game[] = [
   {
     id: 1,
     title: 'سباق الأسئلة',
-    description: 'أجب عن أكبر عدد من الأسئلة قبل أن ينتهي المؤقت',
+    description: 'أجب عن أكبر عدد من الأسئلة قبل أن ينتهي الوقت',
     image: gameImg1,
     bgColor: '#8B7BFF',
   },
@@ -48,6 +49,8 @@ const games: Game[] = [
 const tags = ['ألعاب الذاكرة', 'ألعاب التطابق', 'ألعاب الألغاز', 'ألعاب الأسئلة'];
 
 export const GamesSection = () => {
+  const navigate = useNavigate(); // <-- hook for navigation
+
   return (
     <section dir="rtl" className="w-full bg-white py-12 sm:py-16 px-4 md:px-8 lg:px-16 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -65,7 +68,7 @@ export const GamesSection = () => {
           </div>
 
           <p className="text-base sm:text-xl md:text-2xl text-[#6B6B78] font-medium max-w-2xl leading-relaxed">
-            ألعاب تفاعلية تنمي الذاكرة والتركيز، وتقوي مهارات التفكير وحل المشكلات. كل لعبة تقدم تحديات جديدة ومكافآت مشجعة، تناسب جميع الأعمار من 6 إلى 13 سنة.
+            ألعاب تعلمية تنمي الذاكرة والتركيز، وتقوي مهارات التفكير وحل المشكلات. كل لعبة تقدم تحديات جديدة ومكافآت مشجعة، تناسب جميع الأعمار من 4 إلى 13 سنة
             <br className="hidden sm:block" />
             اختر لعبتك المفضلة واستمتع بأوقات تعليمية مليئة بالمرح والإثارة.
           </p>
@@ -103,12 +106,12 @@ export const GamesSection = () => {
                   <div className="absolute bottom-0 left-0 w-32 sm:w-40 h-32 sm:h-40 bg-black rounded-full blur-2xl" />
                 </div>
 
-                {/* Top-right badge – larger on mobile for easier tap */}
+                {/* Top-right badge */}
                 <div className="absolute top-2 sm:top-3 right-2 sm:right-3 w-7 sm:w-9 h-7 sm:h-9 bg-white rounded-full flex items-center justify-center shadow-md z-10">
                   <Gamepad2 className="w-4 sm:w-5 h-4 sm:h-5 text-[#8B7BFF]" />
                 </div>
 
-                {/* Floating game image – slightly larger on mobile for better visibility */}
+                {/* Floating game image */}
                 <div className="flex justify-center mb-3 sm:mb-4 mt-1 sm:mt-2">
                   <motion.img
                     src={game.image}
@@ -128,12 +131,13 @@ export const GamesSection = () => {
                   </p>
                 </div>
 
-                {/* Button – bigger touch area on mobile */}
+                {/* Button – navigates to Under Construction */}
                 <div className="flex justify-end mt-4 sm:mt-5">
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-1.5 sm:gap-2 bg-[#FFD54F] text-[#2D2D2D] px-3 sm:px-5 py-1.5 sm:py-2.5 rounded-[7px] text-xs sm:text-sm md:text-base font-black shadow-md hover:shadow-lg transition-all"
+                    onClick={() => navigate('/trial')} // <-- navigation added
+                    className="flex items-center gap-1.5 sm:gap-2 bg-[#FFD54F] text-[#2D2D2D] px-3 sm:px-5 py-1.5 sm:py-2.5 rounded-[7px] text-xs sm:text-sm md:text-base font-black shadow-md hover:shadow-lg transition-all cursor-pointer"
                   >
                     <Gamepad2 size={14} className="rotate-12 sm:w-4 sm:h-4 md:w-5 md:h-5" />
                     <span>ابدأ الآن</span>
