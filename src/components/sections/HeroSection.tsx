@@ -40,7 +40,7 @@ const HeroSection = () => {
             <img
               src={item2}
               alt=""
-              className="absolute -top-20 left-[80%] w-16 md:w-30 z-30"
+              className="absolute -top-20 left-[80%] w-16 md:w-20 z-30"
             />
             <img
               src={item3}
@@ -50,12 +50,12 @@ const HeroSection = () => {
             <img
               src={item4}
               alt=""
-              className="absolute top-20 left-0 w-20 md:w-30 z-30"
+              className="absolute top-20 left-[320px] w-20 md:w-30 z-30"
             />
             <img
               src={item1}
               alt=""
-              className="absolute top-[-50px] left-[10%] w-20 md:w-28 z-30"
+              className="absolute top-[-90px] left-[10%] w-20 md:w-28 z-30"
             />
             <img
               src={item5}
