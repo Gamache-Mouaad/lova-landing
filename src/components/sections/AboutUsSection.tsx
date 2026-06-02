@@ -24,7 +24,7 @@ export const AboutUsSection = () => {
           style={{ boxShadow: '0 16px 48px rgba(139, 123, 255, 0.3)' }}
         >
           {/* Title */}
-          <h2 className="text-3xl md:text-7xl font-black text-[#FFD54F] mb-6">
+          <h2 className="text-3xl md:text-7xl font-lalezar text-[#FFD54F] mb-6">
             من نحن
           </h2>
 

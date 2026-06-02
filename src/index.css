@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 @import "tailwindcss";
 
-:root {
+@theme {
+  --font-lalezar: "Lalezar", cursive;
+  
   /* Colors from image */
+  --color-brand-purple: #8B7BFF;
+  --color-brand-use: #DFC8FE;
+  --color-brand-yellow: #FFD54F;
+  --color-pill-bg: #ffffff;
+  --color-text-dark: #2D2D2D;
+  --color-text-muted: #6B6B78;
+}
+
+:root {
   --color-brand-purple: #8B7BFF;
   --color-brand-use: #DFC8FE;
   --color-brand-yellow: #FFD54F;

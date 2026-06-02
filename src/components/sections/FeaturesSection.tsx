@@ -15,7 +15,7 @@ const cardsData = [
   {
     id: 1,
     title: 'قصص مسموعة',
-    description: 'كل يوم قصة جديدة بصوت واضح وممتع، مع رسوم ملونة وشخصيات محبوبة، تنمي خيال طفلك وتثري مفرداته.',
+    description: 'كل يوم قصة جديدة بصوت واضح وممتع، مع رسوم ملونة وشخصيات محبوبة، تعزز قدرات وخيال طفلك، وتثري مفرادته.',
     mainIcon: bookIcon,
     badgeIcon: <BookOpen size={20} className="text-white" />,
     bgImage: bookBg,
@@ -23,7 +23,7 @@ const cardsData = [
   {
     id: 2,
     title: 'ألعاب تعليمية',
-    description: 'ألعاب تعليمية ممتعة تنمي الذاكرة والتفكير، مناسبة للأطفال 6-13 سنة، مع نظام مكافآت وجوائز.',
+    description: 'ألعاب تعليمية ممتعة تنمي الذاكرة والتفكير، مناسبة للأطفال 4-13 سنة، مع نظام مكافآت وجوائز.',
     mainIcon: controllerIcon,
     badgeIcon: <Gamepad2 size={20} className="text-white" />,
     bgImage: controllerBg,

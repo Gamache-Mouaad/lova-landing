@@ -15,7 +15,7 @@ export const CharactersSection = () => {
     <section dir="rtl" className="bg-white py-20 px-4 md:px-12">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-black text-[#8B7BFF] mb-3">
+          <h2 className="text-4xl md:text-5xl font-lalezar text-[#8B7BFF] mb-3">
             الشخصيات
           </h2>
           <p className="text-2xl text-[#6B6B78] max-w-3xl mx-auto font-medium  leading-relaxed">
@@ -25,7 +25,7 @@ export const CharactersSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="  grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 p-15">
           {characters.map((char, idx) => (
             <motion.div
               key={char.id}

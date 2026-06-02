@@ -199,7 +199,7 @@ export const RewardsSection = () => {
             initial={{ opacity: 0, y: 14 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-black text-[#1A1A1A] mb-3"
+            className="text-4xl md:text-5xl font-lalezar text-[#1A1A1A] mb-3"
           >
             جوائزي
           </motion.h2>

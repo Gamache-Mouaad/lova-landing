@@ -66,7 +66,7 @@ export const PricingSection = () => {
         </div>
 
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-black text-[#8B7BFF] mb-3">
+          <h2 className="text-4xl md:text-5xl font-lalezar text-[#ffd500] mb-3">
             خطط الاشتراك
           </h2>
           <p className="text-3xl text-[#6B6B78] max-w-2xl mx-auto">
