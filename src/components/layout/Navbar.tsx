@@ -67,13 +67,13 @@ export const Navbar = () => {
         </div>
 
         {/* Desktop pill menu */}
-        <div className="hidden items-center rounded-full border border-gray-100 bg-[#F5F5F7] p-1.5 shadow-sm lg:flex">
+        <div className="hidden items-center  p-1.5  lg:flex">
           <div className="flex items-center gap-1">
             {navLinks.map((link) => (
               <button
                 key={link.target}
                 onClick={() => handleNavigation(link.target)}
-                className="whitespace-nowrap rounded-full px-5 py-2 text-sm font-bold transition-all duration-200 text-[#6B6B78] hover:text-[#4A4A55] hover:bg-[#EBEBF0]"
+                className="whitespace-nowrap rounded-full px-2 py-1 text-sm font-medium transition-all duration-200 text-[#6B6B78] hover:text-[#ffffff] hover:bg-[#8B7BFF] ease-in"
               >
                 {link.name}
               </button>

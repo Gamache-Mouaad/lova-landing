@@ -27,7 +27,7 @@ const UnderConstruction = () => {
           <div className="text-right md:text-right flex-1">
             <div className="flex items-center gap-2 text-[#8B7BFF] mb-4">
               <Wrench size={32} />
-              <h1 className="text-3xl md:text-4xl font-black text-[#1A1A1A]">قيد التطوير</h1>
+              <h1 className="text-3xl md:text-4xl font-lalezar text-[#8B7BFF]">قيد التطوير</h1>
 
             </div>
             <p className="text-2xl text-[#6B6B78] mb-2 leading-relaxed">
@@ -93,7 +93,7 @@ const UnderConstruction = () => {
                   className="bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:-translate-y-2 text-right"
                 >
                   <Icon size={36} className="text-[#8B7BFF] mb-4" />
-                  <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">{item.title}</h3>
+                  <h3 className="text-xl font-lalezar text-[#8B7BFF] mb-2">{item.title}</h3>
                   <p className="text-sm text-[#6B6B78] leading-relaxed">{item.desc}</p>
                 </div>
               );

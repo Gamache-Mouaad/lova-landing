@@ -5,7 +5,7 @@ import lovaLogo from '../../assets/logo/lova.png';
 
 export const ParentsBlogSection = () => {
   return (
-    <section dir="rtl" className="bg-white py-24 px-4 md:px-12 overflow-hidden">
+    <section dir="rtl" className="bg-white py-23 px-1 md:px-12 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -24,7 +24,7 @@ export const ParentsBlogSection = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-black text-[#1A1A1A] mb-4"
+            className="text-4xl md:text-5xl font-lalezar text-[#ffd000] mb-4"
           >
             لماذا lova؟
           </motion.h2>
@@ -50,7 +50,7 @@ export const ParentsBlogSection = () => {
           <img
             src={gridImg}
             alt="Lova features grid"
-            className="w-full h-auto object-contain"
+            className="w-180 md:w-full lg:w-full h-auto object-contain"
           />
         </motion.div>
       </div>
