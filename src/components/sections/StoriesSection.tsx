@@ -6,7 +6,7 @@ import lovaLogo from '../../assets/logo/lova.png';
 const categories = [
   'مغامرات',
   'قصص قبل النوم',
-  'تربية وقيم',
+  'تربوية',
   'تعليمية',
   'دينية',
   'ثقافية',

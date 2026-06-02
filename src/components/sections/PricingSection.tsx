@@ -1,6 +1,7 @@
 // src/components/sections/PricingSection.tsx
 import { motion } from 'framer-motion';
 import { Check, Gift, Calendar, Star } from 'lucide-react';
+import { useNavigate } from 'react-router-dom'; // <-- import useNavigate
 import lovaLogo from '../../assets/logo/lova.png';
 
 const plans = [
@@ -58,6 +59,12 @@ const plans = [
 ];
 
 export const PricingSection = () => {
+  const navigate = useNavigate();
+
+  const handleSubscribe = () => {
+    navigate('/trial'); // navigate to Under Construction page
+  };
+
   return (
     <section dir="rtl" className="bg-white py-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
@@ -74,7 +81,7 @@ export const PricingSection = () => {
           </p>
         </div>
 
-        <div className="  p-3.5 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        <div className="p-3.5 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
           {plans.map((plan, idx) => (
             <motion.div
               key={plan.name}
@@ -101,7 +108,7 @@ export const PricingSection = () => {
                 {plan.period && <span className="text-lg text-[#6B6B78] mr-1">{plan.period}</span>}
               </div>
 
-              <ul className="  space-y-3 mb-8 flex-1 text-right">
+              <ul className="space-y-3 mb-8 flex-1 text-right">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2 text-[#4A4A55]">
                     <Check size={25} className="text-[#8B7BFF] flex-shrink-0" />
@@ -111,7 +118,8 @@ export const PricingSection = () => {
               </ul>
 
               <button
-                className={`w-full py-3 rounded-xl font-bold text-base transition-all hover:scale-101 ${plan.buttonColor}`}
+                onClick={handleSubscribe}
+                className={`w-full py-3 rounded-xl font-bold text-base transition-all hover:scale-101 cursor-pointer ${plan.buttonColor}`}
               >
                 {plan.buttonText}
               </button>
